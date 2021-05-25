@@ -1,7 +1,28 @@
-.block-example {
-    width: 6rem;
-    height: 6rem;
-    margin: 0.5rem;
-    background-color: #eee;
-    display: inline-block;
+teste {
+    
+    
+    border:'solid 10px';
+    border-radius:'20px';
+    box-shadow: '10px 10px 10px 5px blue';
+   
+
+
+}
+
+teste2 {
+    
+    border:'solid 10px';
+    border-radius:'20px';
+    box-shadow: '10px 10px 10px 5px red';
+
+}
+
+teste3 {
+
+    border:'solid 10px';
+    border-radius:'20px';
+    box-shadow: '10px 10px 10px 5px green';
+
+
+
 }
