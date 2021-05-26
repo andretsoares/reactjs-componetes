@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
-import Ativar from './imgs/cadastros.png'
-import Desativar from './imgs/cadastros2.png'
+import Ativar from './imgs/financeiro.png'
+import Desativar from './imgs/financeiro2.png'
 
 
 
-export default function Cadastros(props) {
+export default function Financeiro(props) {
 
 
 

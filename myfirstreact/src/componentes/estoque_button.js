@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
-import Ativar from './imgs/cadastros.png'
-import Desativar from './imgs/cadastros2.png'
+import Ativar from './imgs/estoque.png'
+import Desativar from './imgs/estoque2.png'
 
 
 
-export default function Cadastros(props) {
+export default function Estoque(props) {
 
 
 
@@ -15,7 +15,8 @@ export default function Cadastros(props) {
         
           const ativo=() => {
               if(props.ligado === true){
-
+                   
+                 
                   return azul;
 
               }else {
@@ -32,7 +33,7 @@ export default function Cadastros(props) {
           
             
 
-            <input type='image' style={ativo()} src={props.ligado?Ativar:Desativar} onClick={()=>props.setLigado(!props.ligado)}/>
+            <input type='image' style={ativo()} src={props.ligado?Ativar:Desativar} onClick={()=>props.setLigado(!props.ligado) }/>
             
           
           </>
