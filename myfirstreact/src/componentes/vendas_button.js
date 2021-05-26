@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
-import Ativar from './imgs/estoque.png'
-import Desativar from './imgs/estoque2.png'
+import Ativar from './imgs/vendas_caixa.png'
+import Desativar from './imgs/vendas_caixa2.png'
 
 
 
-export default function Estoque(props) {
+export default function Vendas(props) {
 
 
 
@@ -15,8 +15,7 @@ export default function Estoque(props) {
         
           const ativo=() => {
               if(props.ligado === true){
-                   
-                 
+
                   return azul;
 
               }else {
@@ -33,7 +32,7 @@ export default function Estoque(props) {
           
             
 
-            <input type='image' style={ativo()} src={props.ligado?Ativar:Desativar} onClick={()=>props.setLigado(!props.ligado) }/>
+            <input type='image' style={ativo()} src={props.ligado?Ativar:Desativar} onClick={()=>props.setLigado(!props.ligado)}/>
             
           
           </>

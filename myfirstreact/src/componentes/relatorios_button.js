@@ -1,10 +1,10 @@
 import React,{useState} from 'react'
-import Ativar from './imgs/estoque.png'
-import Desativar from './imgs/estoque2.png'
+import Ativar from './imgs/relatorios.png'
+import Desativar from './imgs/relatorios2.png'
 
 
 
-export default function Estoque(props) {
+export default function Relatorios(props) {
 
 
 
