@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import zoom from './componentes/mysass.scss'
+import stylus from '../src/App.css'
 import Cadastros from './componentes/cadastros_button'
 import Financeiro from './componentes/financeiro_button'
 import Estoque from './componentes/estoque_button'
@@ -25,7 +25,20 @@ export default function App(){
   const [ligado9,setLigado9]=useState(true)
   const [ligado10,setLigado10]=useState(true)
 
-  
+ 
+  const select=() => {
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+      });
+    }
+
+}
+
 
   return (
 
@@ -43,9 +56,8 @@ export default function App(){
     <Suporte ligado={ligado8} setLigado={setLigado8}/>
     <Ferramentas ligado={ligado9} setLigado={setLigado9}/>
     <Sair ligado={ligado10} setLigado={setLigado10}/>
-
    
-    
+   
     </>
 
 

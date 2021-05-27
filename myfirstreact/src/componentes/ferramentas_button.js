@@ -7,12 +7,10 @@ import Desativar from './imgs/ferramentas2.png'
 export default function Ferramentas(props) {
 
 
-
-          const azul={border:'solid 2px', borderRadius:'20px', width:'100px', height:'100px', marginLeft:'10px'}
+  const azul={border:'solid 2px', borderRadius:'20px', width:'100px', padding:'3px', backgroundColor:'#00BFFF', height:'100px', marginLeft:'10px'}
   
-          const verde={border:'solid 2px', borderRadius:'20px', padding:'5px', backgroundColor:'#E3E3E3'}
+  const verde={border:'solid 2px', borderRadius:'20px', padding:'5px', backgroundColor:'#FF4500' }
 
-        
           const ativo=() => {
               if(props.ligado === true){
 
@@ -32,7 +30,7 @@ export default function Ferramentas(props) {
           
             
 
-            <input type='image' style={ativo()} src={props.ligado?Ativar:Desativar} onClick={()=>props.setLigado(!props.ligado)}/>
+            <input type='image' class='btn' style={ativo()} src={props.ligado?Ativar:Desativar} onClick={()=>props.setLigado(!props.ligado)}/>
             
           
           </>
