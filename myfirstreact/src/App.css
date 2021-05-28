@@ -23,3 +23,34 @@
   padding:'5px';
   background-color:'#7CFC00'; 
 }
+
+
+
+.frames {
+  
+
+
+    width: '100px'; 
+    height: '100px'; 
+    position: 'relative';
+    animation-name: 'example';
+    animation-duration: '4s';
+    animation-iteration-count: 'infinite';
+    animation-direction: 'normal';
+    border:'solid 2px #00BFFF';
+    border-radius:'20px';
+    padding:'5px';
+    background-color:'#fff';
+}
+
+   @keyframes frameslinhas {
+ 
+      25%  {border-right:'#FFFF00 left:0px top:0px'}
+      50%  {border-bottom:'#00FF00 left:0px top:0px'}
+      75%  {border-left:'#0000FF left:0px top:0px'}
+      100% {border-top:'#FF0000 left:0px top:0px'}
+      0%   {border:'#FFA500 solid 0px top:0px'}
+    }
+  
+          
+  
