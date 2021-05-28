@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-
-import styled, {keyframes} from "styled-components";
+import styled from "styled-components";
 import Ativar from './imgs/cadastros.png'
 import Desativar from './imgs/cadastros2.png'
 

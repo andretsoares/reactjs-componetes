@@ -35,9 +35,9 @@ export default function App(){
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
       });
-    }
+    } 
 
-}
+} 
 
 
   return (
@@ -55,7 +55,7 @@ export default function App(){
     <Configuracoes ligado={ligado7} setLigado={setLigado7}/>
     <Suporte ligado={ligado8} setLigado={setLigado8}/>
     <Ferramentas ligado={ligado9} setLigado={setLigado9}/>
-    <Sair ligado={ligado10} setLigado={setLigado10}/>
+    <Sair ligado={ligado10} setLigado={setLigado10}/> 
    
    
     </>
