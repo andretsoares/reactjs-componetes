@@ -10,47 +10,60 @@
   background-color:'#00BFFF';
   height:'100px';
   margin-left:'10px';
+  
 }
 
 /* Style the active class, and buttons on mouse-over */
-.active, .btn:hover {
+.btn:hover {
   background-color: #666;
   color: #00FF7F;
-
-
   border:'solid 2px';
   border-radius:'20px';
   padding:'5px';
   background-color:'#7CFC00'; 
+
+
+  
+}
+
+.active {
+
+
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation-name: example;
+  animation-delay: 1;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: normal; 
+  border:solid 2px #00BFFF;
+  border-color:20px;
+  padding:5px;
+  background-color:#fff; 
+  
+
+   
+}
+
+@keyframes example {
+  
+  0%   {border-right:#00BFFF; left:0px; top:0px;border:inset 4px SpringGreen;}
+  10%  {border-right:Tomato; left:0px; top:0px;border:inset 4px MediumSeaGreen;}
+  20%  {border-right:MediumSeaGreen; left:0px; top:0px;border:outset 4px Tomato;}
+  30%  {border-bottom:DodgerBlue; left:0px; top:0px;border:inset 4px Orange;}
+  40%  {border-bottom:Orange; left:0px; top:0px;border:outset 4px DodgerBlue;}
+  50%  {border-left:Violet;left:0px; top:0px;border:inset 4px Yellow;}
+  60%  {border-left:Yellow;left:0px; top:0px;border:outset 4px Violet;}
+  70% {border-top:Orange; left:0px; top:0px;border: inset 4px DodgerBlue;}
+  80% {border-top:DodgerBlue; left:0px; top:0px;border: outset 4px Orange;}
+  90%   {border:MediumSeaGreen; top:0px;border:inset 4px Tomato;}
+  100%   {border:Tomato; top:0px;border:outset 4px MediumSeaGreen;}
 }
 
 
 
-.frames {
+
+
   
-
-
-    width: '100px'; 
-    height: '100px'; 
-    position: 'relative';
-    animation-name: 'example';
-    animation-duration: '4s';
-    animation-iteration-count: 'infinite';
-    animation-direction: 'normal';
-    border:'solid 2px #00BFFF';
-    border-radius:'20px';
-    padding:'5px';
-    background-color:'#fff';
-}
-
-   @keyframes frameslinhas {
- 
-      25%  {border-right:'#FFFF00 left:0px top:0px'}
-      50%  {border-bottom:'#00FF00 left:0px top:0px'}
-      75%  {border-left:'#0000FF left:0px top:0px'}
-      100% {border-top:'#FF0000 left:0px top:0px'}
-      0%   {border:'#FFA500 solid 0px top:0px'}
-    }
-  
-          
   

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import Ativar from './imgs/estoque.png'
 import Desativar from './imgs/estoque2.png'
 
@@ -8,10 +8,37 @@ export default function Estoque(props) {
 
 
 
-  const azul={border:'solid 2px', borderRadius:'20px', width:'100px', padding:'3px', backgroundColor:'#00BFFF', height:'100px', marginLeft:'10px'}
+  const azul={
+    
+    border:'solid 2px',
+    borderRadius:'20px',
+    width:'100px',
+    padding:'3px',
+    backgroundColor:'#00BFFF', 
+    height:'100px', 
+    marginLeft:'10px'}
+    
+    const verde={
+      
+      
+    borderRadius:'20px',  
+    width: '100px',
+    height: '100px',
+    animationName: 'example',
+    animationDelay: '1',
+    animationDuration: '5s',
+    animationIterationCount: 15,    
+    border:'solid 2px #00BFFF',
+    borderColor:'10px',
+    padding:'3px',
+    backgroundColor:'#fff'
   
-  const verde={border:'solid 2px', borderRadius:'20px', padding:'5px', backgroundColor:'#FF4500' }
-
+  
+  
+  
+  
+  }
+  
         
           const ativo=() => {
               if(props.ligado === true){
@@ -33,7 +60,7 @@ export default function Estoque(props) {
           
             
 
-            <input type='image' class='btn' style={ativo()} src={props.ligado?Ativar:Desativar} onClick={()=>props.setLigado(!props.ligado) }/>
+            <input className="btn" type="image" alt=""  style={ativo()} src={props.ligado?Ativar:Desativar} onClick={()=>props.setLigado(!props.ligado) }/>
             
           
           </>
